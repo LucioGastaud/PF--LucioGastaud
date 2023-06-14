@@ -1,0 +1,138 @@
+* {
+    font-family: $font__texto;
+    font-size: $font__t-min;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: $font__t-base;
+}
+
+h1, h1 * {
+    font-family: $font__titulo;
+    font-size: $font__t-min + 0.8rem;
+}
+
+h2, h2 * {
+    font-family: $font__titulo;
+    font-size: $font__t-min + 0.6rem;
+}
+
+h3, h3 * {
+    font-family: $font__titulo;
+    font-size: $font__t-min + 0.4rem;
+}
+
+h4, h4 * {
+    font-family: $font__titulo;
+    font-size: $font__t-min + 0.2rem;
+}
+
+h5, h5 * {
+    font-family: $font__titulo;
+    font-size: $font__t-min + 0.1rem;
+}
+
+
+@media only screen and (min-width: 500px) {
+    * {
+        font-size: $font__t-min-med;
+    }
+    h1, h1 * {
+        font-family: $font__titulo;
+        font-size: $font__t-min-med + 0.8rem;
+    }
+    h2, h2 * {
+        font-family: $font__titulo;
+        font-size: $font__t-min-med + 0.6rem;
+    }
+    h3, h3 * {
+        font-family: $font__titulo;
+        font-size: $font__t-min-med + 0.4rem;
+    }
+    h4, h4 * {
+        font-family: $font__titulo;
+        font-size: $font__t-min-med + 0.2rem;
+    }
+    h5, h5 * {
+        font-family: $font__titulo;
+        font-size: $font__t-min-med + 0.1rem;
+    }
+}
+@media only screen and (min-width: 700px) {
+    * {
+        font-size: $font__t-med;
+    }
+    h1, h1 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med + 0.8rem;
+    }
+    h2, h2 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med + 0.6rem;
+    }
+    h3, h3 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med + 0.4rem;
+    }
+    h4, h4 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med + 0.2rem;
+    }
+    h5, h5 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med + 0.1rem;
+    }
+}
+@media only screen and (min-width: 900px) {
+    * {
+        font-size: $font__t-med-max ;
+    }
+    h1, h1 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med-max + 0.8rem ;
+    }
+    h2, h2 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med-max + 0.6rem ;
+    }
+    h3, h3 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med-max + 0.4rem;
+    }
+    h4, h4 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med-max + 0.2rem;
+    }
+    h5, h5 * {
+        font-family: $font__titulo;
+        font-size: $font__t-med-max + 0.1rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    * {
+        font-size: $font__t-max;
+    }
+    h1, h1 * {
+        font-family: $font__titulo;
+        font-size: $font__t-max + 0.8rem;
+    }
+    h2, h2 * {
+        font-family: $font__titulo;
+        font-size: $font__t-max + 0.6rem;
+    }
+    h3, h3 * {
+        font-family: $font__titulo;
+        font-size: $font__t-max + 0.4rem;
+    }
+    h4, h4 * {
+        font-family: $font__titulo;
+        font-size: $font__t-max + 0.2rem;
+    }
+    h5, h5 * {
+        font-family: $font__titulo;
+        font-size: $font__t-max + 0.1rem;
+    }
+}

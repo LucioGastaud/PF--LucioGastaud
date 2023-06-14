@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GulaExpress - Tienda</title>
+  <meta name="title" content="GulaExpress - Tienda">
+  <meta name="description" content="La tienda de GulaExpress donde encontraras tus comidas favoritas de tus locales favoritos, o podras buscar algo nuevo tambien">
+  <meta name="keywords" content="COMIDA, COMIDA RAPIDA, DELIVERY, PEDIR, PIZZA, HAMBURGUESA, HELADO, BEBIDAS, COMER, CALIDAD, FACIL">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juanjogrillo.github.io/PreEntrega2-JuanGrillo/">
+  <meta property="og:title" content="GulaExpress - Tienda">
+  <meta property="og:description" content="En GulaExpress podrás pedir la comida que quieras, desde donde quieras, y cuando quieras. Vos tranquilo, nosotros nos ocupamos.">
+  <meta property="og:image" content="./assets/imgs/item-2.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://juanjogrillo.github.io/PreEntrega2-JuanGrillo/">
+  <meta property="twitter:title" content="GulaExpress - Tienda">
+  <meta property="twitter:description" content="En GulaExpress podrás pedir la comida que quieras, desde donde quieras, y cuando quieras. Vos tranquilo, nosotros nos ocupamos.">
+  <meta property="twitter:image" content="./assets/imgs/item-2.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>GulaExpress</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a class="logo-1-container" href="../index.html"><img class="logo logo-1" src="../assets/icons/logo.svg" alt="logo"></a>
+      <a class="logo-2-container" href="../index.html"><img class="logo logo-2" src="../assets/icons/logo2.svg" alt="logo"></a>
+      <!-- nav desde los 600px -->
+      <ul class="nav-opciones nav">
+        <li class="nav-item">
+          <a class="nav-opciones-a-1 nav-link" href="#">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-opciones-a-2 nav-link" href="./ofertas.html">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-opciones-a-3 nav-link" href="./cupones.html">Cupones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-opciones-a-4 nav-link" href="./contacto.html">Contacto</a>
+        </li>
+      </ul>
+      <div class="boton-navbar dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="boton-navbar__opciones dropdown-menu">
+          <li><a class="dropdown-item" href="#">Tienda</a></li>
+          <li><a class="dropdown-item" href="./ofertas.html">Ofertas</a></li>
+          <li><a class="dropdown-item" href="./cupones.html">Cupones</a></li>
+          <li><a class="dropdown-item" href="./contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="boton-usuario dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-user"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="./registro.html">Cambiar cuenta</a></li>
+          <li><a class="dropdown-item" href="./registro.html">Cerrar sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<!-- BARRA SECUNDARIA -->
+<nav class="contenedor-barra-secundaria">
+  <!-- index -->
+  <div class="contenedor-barra-secundaria__index">
+    <p>Categorias</p>
+    <i class="fa-solid fa-greater-than"></i>
+    <p>Local</p>
+  </div>
+  <!-- carrito -->
+  <div class="contenedor-barra-secundaria__carrito">
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-cart-arrow-down"></i></button>
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="cuerpo-offcanvas offcanvas-body">
+    <p>Este es tu carrito personal de compras</p>
+    <p>Tus compras:</p>
+    <img src="../assets/imgs/item-3.jpg">
+    <img src="../assets/imgs/item-3.jpg">
+  </div>
+</div>
+    <p>Carrito</p>
+  </div>
+  <!-- buscador -->
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</nav>
+<!-- CATEGORIAS -->
+<section class="categorias">
+  <h2>Categorias</h2>
+  <div class="categorias-tienda-contenedor container text-center">
+    <div class="row">
+      <div class="categorias-item categoria-imagen-1 col">
+      </div>
+      <div class="categorias-item categoria-imagen-2 col">
+      </div>
+      <div class="categorias-item categoria-imagen-3 col">
+      </div>
+    </div>
+    <div class="row">
+      <div class="categorias-item categoria-imagen-4 col">
+      </div>
+      <div class="categorias-item categoria-imagen-5 col">
+      </div>
+      <div class="categorias-item categoria-imagen-6 col">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALES -->
+<h2 class="tienda__locales-titulo">Locales</h2>
+<section class="contenedor-de-locales">
+  <article class="contenedor-de-locales__local">
+
+    <img src="../assets/imgs/local.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-2.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-3.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-4.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-5.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-6.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-7.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+  <article class="contenedor-de-locales__local">
+    <img src="../assets/imgs/local-8.jpg" alt="local">
+    <div class="contenedor-de-locales__local-info">
+      <p>Titulos</p>
+      <p>Aclaraciones</p>
+    </div>
+  </article>
+</section>
+<!-- ITEM -->
+<h2 class="tienda__comidas-titulo">Comidas</h2>
+<section class="tienda-contenedor">
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-2.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-2.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-3.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-3.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-4.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-4.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-5.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-5.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-6.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-6.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-7.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-7">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-7.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ITEM -->
+  <div class="tienda-contenedor__item-contenedor">
+    <div class="card tienda-contenedor__item-contenedor-2">
+      <h5>Card title</h5>
+      <img src="../assets/imgs/item-8.jpg" class="card-img-top" alt="producto">
+      <div class="card-body tienda-contenedor__item-contenedor-2__info">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
+          Launch demo modal
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="compra-realizada-texto modal-title fs-5" id="exampleModalLabel">Compra realizada!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="contenedor-compra-realizada-puntos modal-body">
+        <img src="../assets/imgs/item-8.jpg" alt="modal">
+        <p>Ganaste 500pts</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- COMBOS -->
+<h2 class="tienda__combos-titulo">Combos</h2>
+<section class="tienda-combos-contenedor">
+  <div class="tienda-combos-contenedor__combo">
+    <img class="comida" src="../assets/imgs/item.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/plus.svg" alt="plus">
+    <img class="comida" src="../assets/imgs/item-3.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/plus.svg" alt="plus">
+    <img class="comida" src="../assets/imgs/item-5.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/equal.svg" alt="equal">
+    <div class="comida precio">$600</div>
+  </div>
+  <div class="tienda-combos-contenedor__combo">
+    <img class="comida" src="../assets/imgs/item.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/plus.svg" alt="plus">
+    <img class="comida" src="../assets/imgs/item-3.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/plus.svg" alt="plus">
+    <img class="comida" src="../assets/imgs/item-5.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/equal.svg" alt="equal">
+    <div class="comida precio">$600</div>
+  </div>
+  <div class="tienda-combos-contenedor__combo">
+    <img class="comida" src="../assets/imgs/item.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/plus.svg" alt="plus">
+    <img class="comida" src="../assets/imgs/item-3.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/plus.svg" alt="plus">
+    <img class="comida" src="../assets/imgs/item-5.jpg" alt="producto">
+    <img class="symbol" src="../assets/icons/equal.svg" alt="equal">
+    <div class="comida precio">$600</div>
+  </div>
+</section>
+<!-- FOOTER -->
+<footer>
+  <p>Derechos reservados a @luciogastaud</p>
+  <p>13/06/2023</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7b206a9721.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

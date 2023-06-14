@@ -1,0 +1,192 @@
+.section-title {
+    background-color: rgb(255, 0, 0);
+    margin: 2rem 0;
+    box-shadow: 1px 3px 8px 0px rgba(0, 0, 0, 0.452);
+    text-align: center;
+    
+    a, a:hover, a:visited {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.busqueda_tienda_titulo {
+    margin: 2rem auto;
+}
+
+.tienda h3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 320px) {
+   
+    .tienda__hero {
+        display: flex;
+        flex-direction: column;
+        img {
+            border: none;  
+            border-radius: 0; 
+        }
+        div {
+            margin-top: 0.4rem;
+        }
+        div p:nth-of-type(3) {
+            margin-bottom: 0;
+        }
+    }
+
+    .tienda__categorias, .tienda__busqueda {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.tienda > * {
+    margin-bottom: 2rem;
+}
+
+.tienda__busqueda {
+    display: flex;
+    img {
+        margin-bottom: 1rem;
+        width: 100%;
+        height: 25rem;
+    
+    }
+    p {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.tienda__categorias {
+    display: flex;
+    p {
+        width: 90%;
+        margin: 0 auto;
+    }
+    img {
+        margin-bottom: 1rem;
+        order: 3;
+        width: 100%;
+        height: 25rem;
+    }
+}
+
+.tienda__hero {
+    display: flex;
+    img {
+        width: 100%;
+        height: 25rem;
+    } 
+}    
+ 
+.comentarios-container p {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 0 0.5rem;
+}   
+
+@media only screen and (min-width: 320px) {
+    .comentarios-container {
+        position: absolute;
+        margin-top: 5%;
+        width: 100%;
+        p {
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+    }
+
+    .tienda__hero, .tienda__busqueda, .tienda__categorias {
+        width: 100%;
+        flex-direction: column;
+        img {
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+}
+
+
+@media only screen and (min-width: 450px) {
+    .tienda__busqueda, .tienda__categorias, .tienda__hero {
+        width: 100%;
+        img {
+            width: 90%;
+            margin-left: 5%;
+        }   
+    }
+    .comentarios-container {
+        width: 100%;
+        p {
+            margin-top: 5%;
+            width: 90%;
+            margin-left: 5%;
+        }
+    }
+}    
+
+@media only screen and (min-width: 620px) {
+    .tienda__busqueda, .tienda__categorias, .tienda__hero {
+        align-items: center;
+        flex-direction: row;
+        img {
+            margin: 0 4rem;
+            width: 50%;
+            height: 30vw;
+        }    
+        p {
+            margin: 0 auto;
+            width: 40%;
+        }
+    }
+
+    .tienda__hero {
+        img {
+            order: 2;
+        }
+    }
+    
+    .comentarios-container {
+        position: initial;
+        order: 1;
+        margin: 0 auto;
+        p {
+            width: 80%;
+        }
+    }
+
+    .tienda__busqueda {
+        p {
+            width: 70%;
+            margin-right: 4rem;
+        }
+    }
+
+    .tienda__categorias {
+        p {
+            width: 70%;
+            margin-left: 4rem;
+        }
+    }
+
+}
+
+// CUPONES
+
+@media only screen and (min-width: 1024px) {
+    .contenedor-puntos-cupones__cupones {
+        margin-left: 2.5%;
+    }
+    .contenedor-puntos-cupones__puntos {
+        margin-right: 2.5%;
+}
+}
+
+@each $seccion, $color in $bg-titulos {
+    .titulo-de-#{$seccion} {
+        background-color: $color;
+    }
+}

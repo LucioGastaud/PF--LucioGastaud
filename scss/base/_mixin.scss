@@ -1,0 +1,7 @@
+// animacion de descenso en los elementos del header
+@mixin agregarAnimacion ($nombre, $espera, $ciclos, $duracion) {
+    animation-name: $nombre;
+    animation-delay: $espera;
+    animation-iteration-count: $ciclos;
+    animation-duration: $duracion;
+}

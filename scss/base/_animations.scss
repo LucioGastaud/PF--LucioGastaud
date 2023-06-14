@@ -1,0 +1,26 @@
+@keyframes mostrarYEsconder {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes esconderYMostrar {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes deslizarHaciaAbajo {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

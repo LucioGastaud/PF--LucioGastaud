@@ -1,0 +1,62 @@
+.contenedor-informacion-registro {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    &__registro {
+        display: flex;
+        flex-direction: column;
+        button {
+            margin: 0 auto;
+            font-size: inherit;
+            width: 45%;        
+        }
+    }
+    &__informacion {
+        h2 {
+        text-decoration: underline;
+        margin-bottom: 2rem;    
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .contenedor-informacion-registro {
+        flex-direction: row;
+        max-width: initial;
+        justify-content: center;
+    }
+
+    .contenedor-informacion-registro__registro {
+        width: 300px;
+        margin-left: 2.5%;
+    }
+
+    .contenedor-informacion-registro__informacion {
+        width: 300px;
+        margin-right: 2.5%;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .contenedor-informacion-registro {
+        margin: 7rem 10%;
+        &__registro, &__informacion {
+            width: 50%;
+        }
+        &__registro {
+            div button, div input {
+                height: 3rem;
+            }
+        }
+        &__informacion h2 {
+            text-decoration: underline;
+            margin-bottom: 3rem;
+        }
+    }
+}

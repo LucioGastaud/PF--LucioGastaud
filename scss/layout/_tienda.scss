@@ -1,0 +1,314 @@
+header {
+    margin-bottom: 0;
+}
+/* barra secundaria */
+.cuerpo-offcanvas { 
+    p {
+        color: black;
+    }
+    img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 1rem;
+    border: 1px solid black;
+    }
+}
+
+.contenedor-barra-secundaria {
+    display: flex;
+    align-items: center;
+    // padding: 10px 20px;
+    background-color: rgba(39, 39, 39, 0.726);
+    height: fit-content;
+    justify-content: space-around !important;
+    * {
+        color: white;
+        align-items: center;
+    }
+    &__carrito {
+        display: flex;
+        margin: 0 auto;
+    }
+    & > *{
+        margin: 5px;
+    }
+    &__index{
+        display: flex;
+        & > * {
+            margin: 5px;
+        }
+    } 
+    form input, form button {
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .contenedor-barra-secundaria {
+        flex-direction: column;
+        &__carrito {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor-barra-secundaria__index  {
+        display: none;
+    }
+} 
+
+/* categorias */
+.categorias {
+    margin: 0 20px;
+    h2 {
+        text-align: center;
+    }
+    &-item {
+        border: 3px solid tomato;
+        margin: 10px;
+    }
+    &-tienda-contenedor > div {
+        justify-content: center;
+    }
+}
+
+@each $numero in $numeros {
+    .categoria-imagen-#{$numero} {
+        @extend %caja-de-categorias;
+        background-image: url("../assets/imgs/categoria-#{$numero}.jpg");
+    }
+}
+
+.tienda-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 900px) {
+    .categorias-tienda-contenedor > div div {
+        height: 150px;
+        margin: 2rem 4rem;
+    }
+}
+
+/* locales */
+
+@media only screen and (max-width: 640px) {
+    .tienda__contenedor-locales__local {
+        flex-direction: column;     
+    }
+}
+
+.contenedor-de-locales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__local {
+        position: relative;
+        max-width: 300px;
+        min-width: 100px;
+        max-height: 300px;
+        min-height: 100px;
+        margin: 10px;
+        border-top: 2px solid rgb(0, 0, 0);
+        border-left: 2px solid rgb(0, 0, 0);
+        box-shadow: 2px 2px 2px black;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            p {
+                background-color: rgba(0, 0, 0, 0.762);
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                color: white;
+                width: fit-content;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+article img {
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.tienda__contenedor-locales {
+    display: flex;
+    flex-wrap: wrap;
+    &__local {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 320px;
+        &-img {
+            width: 100%;
+            max-width: 200px;
+            max-height: 200px;
+            margin: 10px;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            margin: 0 10px;
+        }
+        p {
+            width: fit-content;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    
+    .tienda__contenedor-locales__local {
+        flex-direction: row;
+    }
+
+}
+
+/* items */
+
+.tienda-contenedor__item-contenedor {
+    margin: 1rem;
+    &-2 {
+        max-width: 250px;
+        h5 {
+            position: absolute;
+            margin: 1rem;
+            background-color: rgba(0, 0, 0, 0.632);
+            color: white;
+            padding: 0.4rem;
+            border-radius: 0.4rem;
+        }
+        img {
+            height: 150px;
+        }
+        &__info {
+            button {
+                width: 100%;
+                height: 3.6rem;
+                font-size: inherit;
+                line-height: 100%;
+            }
+        }
+    }
+}
+
+.contenedor-compra-realizada-puntos {
+    img {
+        width: 100%;
+    }
+    p {
+        color: red;
+        text-align: center;
+    }   
+} 
+
+/* combos */
+
+.tienda-combos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__combo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin: 10px;
+        border-radius: 2rem;
+        padding: 0;
+        img:nth-of-type(1),
+        img:nth-of-type(3),
+        img:nth-of-type(5) {
+            border: 3px solid black;
+        }
+        div {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            border-radius: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 700px){
+    .tienda-combos-contenedor__combo { 
+        padding: 0 7rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tienda-combos-contenedor__combo {
+        background-color: white;
+        margin: 10px;
+        border-radius: 2rem;
+        padding: 0 10rem;
+    }   
+}
+
+.comida {
+    max-width: 200px;
+    max-height: 150px;
+    margin: 1rem;
+}
+
+.symbol {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media only screen and (min-width: 700px) {
+    
+    .tienda-combos-contenedor__combo {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .comida { 
+        margin: 1rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tienda-combos-contenedor {
+        flex-direction: column;
+    }
+}
+
+/* titulos de secciones */
+
+.categorias h2 {
+    text-decoration: underline;
+    width: fit-content;
+    margin: 2.5rem auto 5rem;
+}  
+
+.tienda__combos-titulo {
+    text-decoration: underline;
+    width: fit-content;
+    margin: 2.5rem auto 5rem;
+
+}
+.tienda__comidas-titulo {
+    text-decoration: underline;
+    width: fit-content;
+    margin: 2.5rem auto 5rem;
+    
+}
+
+.tienda__locales-titulo {
+    text-decoration: underline;
+    width: fit-content;
+    margin: 2.5rem auto 5rem;
+    
+}

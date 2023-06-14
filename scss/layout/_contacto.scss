@@ -1,0 +1,101 @@
+body {
+    background-color: $bg-cremita;
+}
+
+.contacto-redes__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-azul-oscuro;
+        border-radius: 100%;
+        padding: 3rem;
+        color: white;
+        a {
+            margin-bottom: 2rem;
+            img {
+                height: 10rem;
+            }
+        }
+    }
+}    
+
+.titulo-mensaje-mail {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contacto-mensaje-mail {
+    display: flex;
+    flex-direction: column;
+}    
+
+.texto-formulario-mail {
+    width: fit-content;
+    margin: 0 auto;
+    p {
+        text-align: center;
+    }    
+}
+
+.formulario-mail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 36rem;
+    margin: 0 auto;
+    input {
+        height: 4rem;
+    }
+    button {
+        font-size: inherit;
+        width: 35%;
+        margin: 0 auto;
+    }    
+    textarea {
+        height: 8rem;
+    }
+}    
+
+.contacto-redes { 
+    margin-bottom: 5rem;
+    h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    // background-color: $bg-azul-oscuro;
+    // color: white;
+    // width: fit-content;
+    // margin: 0 auto 3rem;
+    // padding: 1rem;
+    // border-radius: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .texto-formulario-mail p {
+        text-align: initial;
+    }  
+}
+
+@media only screen and (min-width: 600px) {
+
+    .contacto-redes__redes {
+        margin: 0 10%;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    .contacto-mensaje-mail {
+        flex-direction: row;
+        margin: 0 10%;
+    }    
+    
+    .formulario-mail {
+        margin-left: 10%;
+    }    
+    
+}
